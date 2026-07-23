@@ -1,0 +1,137 @@
+[
+  {
+    "id": "sec-1961-80c",
+    "actYear": "1961",
+    "sectionNumber": "80C",
+    "sectionTitle": "Deduction in respect of life insurance premia, provident fund, etc.",
+    "chapter": "Chapter VI-A",
+    "keywords": ["80C", "deduction", "lic", "ppf", "elss", "tax saving"],
+    "synonyms": ["life insurance", "provident fund", "tuition fees", "home loan principal"],
+    "status": "active",
+    "effectiveDate": "1962-04-01",
+    "parallelSection": "72",
+    "oldSection": "80C",
+    "newSection": "72",
+    "simpleMeaning": "Allows eligible assessees to claim tax deductions up to statutory limits for specified investments.",
+    "detailedMeaning": "Detailed explanation of Section 80C computation rules and lock-in requirements.",
+    "bareAct": {
+      "rawText": "In computing the total income of an assessee, there shall be deducted...",
+      "subsections": []
+    },
+    "importantChanges": ["Threshold cap maintained under Finance Act 2024."],
+    "exceptions": ["Not applicable under New Default Tax Regime Section 115BAC unless specified."],
+    "limits": [
+      {
+        "title": "Maximum Overall Deduction Cap",
+        "amount": 150000,
+        "description": "Aggregate deduction cap under Section 80C, 80CCC and 80CCD(1)."
+      }
+    ],
+    "penalties": [],
+    "examples": [
+      {
+        "id": "ex-80c-1",
+        "title": "Example 1: Individual PPF & LIC Deposit",
+        "scenario": "Assessee deposits ₹1,00,000 in PPF and pays ₹60,000 LIC premium.",
+        "solution": "Total investment ₹1,60,000. Maximum allowed deduction under Section 80C is restricted to ₹1,50,000."
+      }
+    ],
+    "relatedSections": ["80CCC", "80CCD", "115BAC"],
+    "relatedRules": ["Rule 2AB"],
+    "relatedForms": ["Form 16"],
+    "caseLawIds": ["demo-case-1"],
+    "amendmentIds": ["demo-amend-1"],
+    "circularIds": [],
+    "notificationIds": [],
+    "revisionNotes": ["Always check if assessee opted for Default Tax Regime Section 115BAC."],
+    "examImportance": "high",
+    "difficultyLevel": "medium",
+    "lastUpdated": "2025-04-01",
+    "source": "Income Tax Act 1961"
+  },
+  {
+    "id": "sec-1961-194q",
+    "actYear": "1961",
+    "sectionNumber": "194Q",
+    "sectionTitle": "Deduction of tax at source on payment of certain sum for purchase of goods",
+    "chapter": "Chapter XVII-B",
+    "keywords": ["194Q", "tds", "purchase of goods", "buyer tds", "withholding tax"],
+    "synonyms": ["goods tds", "buyer tax deduction"],
+    "status": "active",
+    "effectiveDate": "2021-07-01",
+    "parallelSection": "185",
+    "oldSection": "194Q",
+    "newSection": "185",
+    "simpleMeaning": "Buyer whose turnover exceeds ₹10 Crore must deduct TDS @ 0.1% on purchase of goods exceeding ₹50 Lakhs.",
+    "detailedMeaning": "Comprehensive explanation of Section 194Q buyer threshold limits and interaction with Section 206C(1H).",
+    "bareAct": {
+      "rawText": "Any person, being a buyer who is responsible for paying any sum to any resident...",
+      "subsections": []
+    },
+    "importantChanges": ["Clarificatory circular issued regarding GST component exclusion."],
+    "exceptions": ["Does not apply if TDS is deductible under any other section or TCS is applicable under 206C."],
+    "limits": [
+      {
+        "title": "Turnover Threshold",
+        "amount": 100000000,
+        "description": "Buyer turnover must exceed ₹10 Crore in preceding financial year."
+      }
+    ],
+    "penalties": [],
+    "examples": [],
+    "relatedSections": ["206C(1H)", "194C"],
+    "relatedRules": [],
+    "relatedForms": ["Form 26Q"],
+    "caseLawIds": [],
+    "amendmentIds": ["demo-amend-2"],
+    "circularIds": [],
+    "notificationIds": [],
+    "revisionNotes": ["Section 194Q overrides Section 206C(1H)."],
+    "examImportance": "high",
+    "difficultyLevel": "hard",
+    "lastUpdated": "2025-04-01",
+    "source": "Income Tax Act 1961"
+  },
+  {
+    "id": "sec-1961-54",
+    "actYear": "1961",
+    "sectionNumber": "54",
+    "sectionTitle": "Profit on sale of property used for residence",
+    "chapter": "Chapter IV-E",
+    "keywords": ["54", "capital gain", "residential property", "exemption", "ltcg"],
+    "synonyms": ["house sale exemption", "capital gain property"],
+    "status": "active",
+    "effectiveDate": "1962-04-01",
+    "parallelSection": "48",
+    "oldSection": "54",
+    "newSection": "48",
+    "simpleMeaning": "Exemption from Long-Term Capital Gains tax on sale of a residential house when reinvested in a new house.",
+    "detailedMeaning": "Explanation of Section 54 time limits for purchase (1 year before, 2 years after) or construction (3 years).",
+    "bareAct": {
+      "rawText": "Subject to the provisions of sub-section (2), where, in the case of an assessee being an individual...",
+      "subsections": []
+    },
+    "importantChanges": ["Maximum capital gain exemption capped at ₹10 Crore under Finance Act 2023."],
+    "exceptions": [],
+    "limits": [
+      {
+        "title": "Maximum Exemption Cap",
+        "amount": 100000000,
+        "description": "Maximum capital gain deduction under Section 54 capped at ₹10 Crore."
+      }
+    ],
+    "examples": [],
+    "relatedSections": ["54EC", "54F", "45"],
+    "relatedRules": [],
+    "relatedForms": [],
+    "caseLawIds": [],
+    "amendmentIds": [],
+    "circularIds": [],
+    "notificationIds": [],
+    "revisionNotes": ["Unutilized amount must be deposited in Capital Gains Account Scheme (CGAS) before due date under Sec 139(1)."],
+    "examImportance": "high",
+    "difficultyLevel": "medium",
+    "lastUpdated": "2025-04-01",
+    "source": "Income Tax Act 1961"
+  }
+]

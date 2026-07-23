@@ -1,0 +1,53 @@
+[
+  {
+    "id": "demo-case-1",
+    "title": "[DEMO PLACEHOLDER] CIT v. Sample Assessee Ltd.",
+    "citation": "[2024] 160 taxmann.com 101 (SC)",
+    "court": "Supreme Court",
+    "bench": "Apex Court",
+    "judgmentDate": "2024-01-15",
+    "year": 2024,
+    "relatedSections": ["80C", "139"],
+    "relatedActId": "1961",
+    "headnote": "[DEMO PLACEHOLDER] Landmark ruling regarding eligibility criteria for statutory deductions under Section 80C.",
+    "keyHoldings": ["[DEMO PLACEHOLDER] Deposit made prior to due date of filing return under Section 139(1) is eligible."],
+    "summary": "[DEMO PLACEHOLDER] Supreme Court held that statutory compliance before due date satisfies deduction prerequisites.",
+    "tags": ["80C", "due date", "deduction eligibility"],
+    "isFavorable": true,
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-case-2",
+    "title": "[DEMO PLACEHOLDER] ABC Enterprises v. ACIT",
+    "citation": "[2023] 152 ITD 405 (Delhi - Trib.)",
+    "court": "ITAT",
+    "bench": "Delhi Bench",
+    "judgmentDate": "2023-11-20",
+    "year": 2023,
+    "relatedSections": ["194Q", "206C(1H)"],
+    "relatedActId": "1961",
+    "headnote": "[DEMO PLACEHOLDER] Interplay between buyer TDS under Section 194Q and seller TCS under Section 206C(1H).",
+    "keyHoldings": ["[DEMO PLACEHOLDER] Section 194Q takes priority over Section 206C(1H) once buyer deducts TDS."],
+    "summary": "[DEMO PLACEHOLDER] ITAT held that seller cannot collect TCS once buyer has deducted TDS under Section 194Q.",
+    "tags": ["194Q", "206C(1H)", "TDS priority"],
+    "isFavorable": true,
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-case-3",
+    "title": "[DEMO PLACEHOLDER] CIT v. Residential Home Investments",
+    "citation": "[2022] 445 ITR 210 (Bom)",
+    "court": "High Court",
+    "bench": "Bombay",
+    "judgmentDate": "2022-08-10",
+    "year": 2022,
+    "relatedSections": ["54"],
+    "relatedActId": "1961",
+    "headnote": "[DEMO PLACEHOLDER] Purchase of two residential flats converted into single residential unit eligible for Section 54 exemption.",
+    "keyHoldings": ["[DEMO PLACEHOLDER] Adjacent flats used as a single residential house qualify for exemption under Section 54."],
+    "summary": "[DEMO PLACEHOLDER] High Court allowed Section 54 exemption for purchase of adjacent flats merged into one house.",
+    "tags": ["54", "residential house", "capital gains"],
+    "isFavorable": true,
+    "source": "Demo Dataset (Placeholder)"
+  }
+]

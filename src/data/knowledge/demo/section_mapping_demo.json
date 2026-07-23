@@ -1,0 +1,35 @@
+[
+  {
+    "id": "map-demo-1",
+    "section1961": "80C",
+    "section2025": "72",
+    "title1961": "[DEMO PLACEHOLDER] Deduction in respect of life insurance premia, PPF, etc.",
+    "title2025": "[DEMO PLACEHOLDER] Deduction in respect of specified investments and savings",
+    "mappingType": "direct",
+    "changeSummary": "[DEMO PLACEHOLDER] Direct statutory correlation between Section 80C (1961) and Section 72 (2025).",
+    "keyDifferences": ["[DEMO PLACEHOLDER] Chapter renumbered from VI-A to VI."],
+    "effectiveAssessmentYear": "2025-26"
+  },
+  {
+    "id": "map-demo-2",
+    "section1961": "194Q",
+    "section2025": "185",
+    "title1961": "[DEMO PLACEHOLDER] Deduction of tax at source on purchase of goods",
+    "title2025": "[DEMO PLACEHOLDER] Deduction of tax at source on purchase of goods",
+    "mappingType": "direct",
+    "changeSummary": "[DEMO PLACEHOLDER] Direct parallel mapping between Section 194Q (1961) and Section 185 (2025).",
+    "keyDifferences": ["[DEMO PLACEHOLDER] Chapter XVII-B renumbered to XIV."],
+    "effectiveAssessmentYear": "2025-26"
+  },
+  {
+    "id": "map-demo-3",
+    "section1961": "54",
+    "section2025": "48",
+    "title1961": "[DEMO PLACEHOLDER] Profit on sale of property used for residence",
+    "title2025": "[DEMO PLACEHOLDER] Capital gains exemption on residential house",
+    "mappingType": "direct",
+    "changeSummary": "[DEMO PLACEHOLDER] Direct parallel mapping between Section 54 (1961) and Section 48 (2025).",
+    "keyDifferences": ["[DEMO PLACEHOLDER] Time limits and CGAS rules harmonized."],
+    "effectiveAssessmentYear": "2025-26"
+  }
+]

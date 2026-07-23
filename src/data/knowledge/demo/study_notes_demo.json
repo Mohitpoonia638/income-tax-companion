@@ -1,0 +1,41 @@
+[
+  {
+    "id": "demo-note-1",
+    "title": "[DEMO PLACEHOLDER] Section 80C Memory Checklist & CA Exam Tips",
+    "sectionNumber": "80C",
+    "actYear": "1961",
+    "keyConcepts": ["[DEMO PLACEHOLDER] Max Cap ₹1.5L", "[DEMO PLACEHOLDER] Lock-in 15 yrs PPF", "[DEMO PLACEHOLDER] ELSS 3 yrs lock-in"],
+    "summary": "[DEMO PLACEHOLDER] Comprehensive revision checklist for solving Section 80C practical problems in CA Intermediate exams.",
+    "mnemonics": ["[DEMO PLACEHOLDER] P-L-E-A-S-E (PPF, LIC, ELSS, Annuity, Stamp duty, Education fee)"],
+    "examTips": ["[DEMO PLACEHOLDER] Always verify if assessee chose Default Tax Regime Section 115BAC before allowing 80C deduction."],
+    "tags": ["80C", "revision note", "ca inter"],
+    "author": "CA Faculty (Demo)",
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-note-2",
+    "title": "[DEMO PLACEHOLDER] Section 194Q vs 206C(1H) Decision Tree",
+    "sectionNumber": "194Q",
+    "actYear": "1961",
+    "keyConcepts": ["[DEMO PLACEHOLDER] Buyer Turnover > 10 Cr", "[DEMO PLACEHOLDER] Goods Value > 50 Lakhs", "[DEMO PLACEHOLDER] TDS Rate 0.1%"],
+    "summary": "[DEMO PLACEHOLDER] Flowchart & rules to determine whether 194Q or 206C(1H) applies in exam scenarios.",
+    "mnemonics": ["[DEMO PLACEHOLDER] BUYER FIRST: If Buyer turnover > 10 Cr and goods > 50L → 194Q TDS applies."],
+    "examTips": ["[DEMO PLACEHOLDER] If PAN is not provided, TDS rate under Section 194Q is 5% instead of 0.1%."],
+    "tags": ["194Q", "206C(1H)", "tds decision tree"],
+    "author": "CA Faculty (Demo)",
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-note-3",
+    "title": "[DEMO PLACEHOLDER] Section 54 Capital Gains Timelines Summary",
+    "sectionNumber": "54",
+    "actYear": "1961",
+    "keyConcepts": ["[DEMO PLACEHOLDER] Purchase 1 yr before / 2 yrs after", "[DEMO PLACEHOLDER] Construction 3 yrs", "[DEMO PLACEHOLDER] CGAS Deposit"],
+    "summary": "[DEMO PLACEHOLDER] Quick reference guide for time limits under Section 54 capital gain exemption.",
+    "mnemonics": ["[DEMO PLACEHOLDER] 1-2-3 RULE: Purchase 1 yr before, 2 yrs after, Construct within 3 yrs."],
+    "examTips": ["[DEMO PLACEHOLDER] Deposit unutilized amount in CGAS scheme before ROI filing due date under Sec 139(1)."],
+    "tags": ["54", "capital gains", "timelines"],
+    "author": "CA Faculty (Demo)",
+    "source": "Demo Dataset (Placeholder)"
+  }
+]

@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
+/* ─── CSS Custom Properties ────────────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Light mode */
+  --background:       #f8fafc;
+  --foreground:       #0f172a;
+  --card:             #ffffff;
+  --card-foreground:  #0f172a;
+  --muted:            #f1f5f9;
+  --muted-foreground: #64748b;
+  --border:           #e2e8f0;
+  --accent:           #f1f5f9;
+  --accent-foreground:#0f172a;
+  --ring:             #3b82f6;
 }
+
+.dark {
+  /* Dark mode */
+  --background:       #070b14;
+  --foreground:       #f1f5f9;
+  --card:             #0d1422;
+  --card-foreground:  #f1f5f9;
+  --muted:            #1e293b;
+  --muted-foreground: #94a3b8;
+  --border:           #1e293b;
+  --accent:           #1e293b;
+  --accent-foreground:#f1f5f9;
+  --ring:             #3b82f6;
+}
+
+/* ─── Tailwind v4 Theme Mapping ─────────────────────────────────────────────── */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background:       var(--background);
+  --color-foreground:       var(--foreground);
+  --color-card:             var(--card);
+  --color-card-foreground:  var(--card-foreground);
+  --color-muted:            var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border:           var(--border);
+  --color-accent:           var(--accent);
+  --color-accent-foreground:var(--accent-foreground);
+  --color-ring:             var(--ring);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base Styles ───────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar        { width: 6px; height: 6px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: rgb(100 116 139 / 0.4); border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: rgb(100 116 139 / 0.7); }
+
+/* ─── Selection ─────────────────────────────────────────────────────────────── */
+
+::selection {
+  background: rgb(59 130 246 / 0.25);
+  color: inherit;
+}
+
+/* ─── Focus Ring ────────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* ─── Utility: Animated Gradient Background ─────────────────────────────────── */
+
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgb(59 130 246 / 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 60%,  rgb(99 102 241 / 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 80%,  rgb(139 92 246 / 0.06) 0%, transparent 60%);
+}
+
+/* ─── Transition: Theme change ─────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+}
+
+/* Disable transition for non-theme properties during interaction */
+button, a, input, textarea {
+  transition-property: background-color, border-color, color, box-shadow, transform, opacity;
 }

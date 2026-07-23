@@ -1,0 +1,50 @@
+[
+  {
+    "id": "demo-amend-1",
+    "sectionNumber": "80C",
+    "sectionId": "sec-1961-80c",
+    "actYear": "1961",
+    "actId": "1961",
+    "type": "Substitution",
+    "financeActYear": 2024,
+    "effectiveFrom": "2024-04-01",
+    "financeBillClause": "Clause 35",
+    "description": "[DEMO PLACEHOLDER] Finance Act 2024 substitution confirming tax deduction provisions under Section 80C.",
+    "oldText": "[DEMO PLACEHOLDER OLD TEXT]",
+    "newText": "[DEMO PLACEHOLDER NEW TEXT]",
+    "impactAnalysis": "[DEMO PLACEHOLDER] No change in overall monetary cap of ₹1,50,000.",
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-amend-2",
+    "sectionNumber": "194Q",
+    "sectionId": "sec-1961-194q",
+    "actYear": "1961",
+    "actId": "1961",
+    "type": "Insertion",
+    "financeActYear": 2021,
+    "effectiveFrom": "2021-07-01",
+    "financeBillClause": "Clause 48",
+    "description": "[DEMO PLACEHOLDER] Finance Act 2021 insertion of Section 194Q for TDS on purchase of goods exceeding ₹50 Lakhs.",
+    "oldText": "[DEMO PLACEHOLDER] None (New Section)",
+    "newText": "[DEMO PLACEHOLDER NEW SECTION TEXT]",
+    "impactAnalysis": "[DEMO PLACEHOLDER] High compliance impact on large buyers with turnover exceeding ₹10 Crore.",
+    "source": "Demo Dataset (Placeholder)"
+  },
+  {
+    "id": "demo-amend-3",
+    "sectionNumber": "54",
+    "sectionId": "sec-1961-54",
+    "actYear": "1961",
+    "actId": "1961",
+    "type": "Substitution",
+    "financeActYear": 2023,
+    "effectiveFrom": "2023-04-01",
+    "financeBillClause": "Clause 24",
+    "description": "[DEMO PLACEHOLDER] Finance Act 2023 amendment capping maximum capital gains exemption under Section 54 at ₹10 Crore.",
+    "oldText": "[DEMO PLACEHOLDER OLD UNLIMITED EXEMPTION]",
+    "newText": "[DEMO PLACEHOLDER NEW CAPPED EXEMPTION]",
+    "impactAnalysis": "[DEMO PLACEHOLDER] Limits high-value capital gains exemptions for HNI taxpayers.",
+    "source": "Demo Dataset (Placeholder)"
+  }
+]
