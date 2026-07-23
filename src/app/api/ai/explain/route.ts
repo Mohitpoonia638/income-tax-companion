@@ -43,10 +43,13 @@ async function callOpenRouterModel(
       headers['HTTP-Referer'] = siteUrl;
     }
 
-    console.log('[DEBUG_HEADERS]', {
-      headerNames: Object.keys(headers),
-      hasAuthorization: !!headers['Authorization'],
-      startsWithBearer: headers['Authorization']?.startsWith('Bearer ') ?? false,
+    const authHeader = headers['Authorization'] || '';
+    const authLength = authHeader.length;
+    const authPreview = authHeader.substring(0, 16);
+
+    console.log('[DEBUG_AUTH]', {
+      authLength,
+      authPreview,
     });
 
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
@@ -203,10 +206,10 @@ export async function POST(request: Request) {
     });
   }
 
+  const authHeader = apiKey ? `Bearer ${apiKey}` : '';
   const headerDebug = {
-    headerNames: ['Authorization', 'Content-Type', 'X-Title', 'HTTP-Referer'],
-    hasAuthorization: !!apiKey,
-    startsWithBearer: true,
+    authLength: authHeader.length,
+    authPreview: authHeader.substring(0, 16),
   };
 
   return NextResponse.json(
