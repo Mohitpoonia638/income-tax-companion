@@ -41,10 +41,10 @@ export function AskAiModule({ sectionNumber }: AskAiModuleProps) {
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        if (data.error && data.error.includes('GEMINI_API_KEY')) {
-          setErrorMsg('GEMINI_API_KEY is not set in .env.local. Add your key to enable live Gemini AI.');
+        if (data.error && data.error.includes('OPENROUTER_API_KEY')) {
+          setErrorMsg('OPENROUTER_API_KEY is not configured. Please add it to your environment variables.');
         } else {
-          setErrorMsg(data.error || 'Failed to get Gemini response.');
+          setErrorMsg(data.error || 'Failed to get AI response.');
         }
         setLoading(false);
         return;

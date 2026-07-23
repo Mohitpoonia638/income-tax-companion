@@ -40,13 +40,13 @@ export function AiTutorClient() {
 
       if (!data.isConfigured) {
         setIsConfigured(false);
-        setErrorMsg('GEMINI_API_KEY is not configured in .env.local. Add your key to enable live Gemini AI queries.');
+        setErrorMsg('OPENROUTER_API_KEY is not configured. Please add it to your environment variables.');
         setLoading(false);
         return;
       }
 
       if (!data.success || !data.data) {
-        setErrorMsg(data.message || data.error || 'Failed to generate Gemini AI response.');
+        setErrorMsg(data.message || data.error || 'Failed to generate AI response.');
         setLoading(false);
         return;
       }
@@ -122,13 +122,13 @@ export function AiTutorClient() {
         <div className="p-6 rounded-2xl border border-amber-500/30 bg-amber-500/10 text-amber-200 space-y-2">
           <div className="flex items-center gap-2 font-semibold text-amber-300">
             <AlertCircle size={18} />
-            <span>Gemini API Key Required</span>
+            <span>OpenRouter API Key Required</span>
           </div>
           <p className="text-sm leading-relaxed text-amber-200/90">
-            To enable live Google Gemini AI answers, open your <code className="px-1.5 py-0.5 rounded bg-black/40 text-amber-300 font-mono text-xs">.env.local</code> file and paste your key:
+            To enable live AI answers, add <code className="px-1.5 py-0.5 rounded bg-black/40 text-amber-300 font-mono text-xs">OPENROUTER_API_KEY</code> to your environment variables:
           </p>
           <pre className="p-3 rounded-xl bg-black/50 border border-white/10 text-xs font-mono text-amber-300">
-            GEMINI_API_KEY=your_actual_gemini_api_key_here
+            OPENROUTER_API_KEY=your_actual_openrouter_api_key_here
           </pre>
         </div>
       )}

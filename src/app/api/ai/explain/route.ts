@@ -29,14 +29,23 @@ async function callOpenRouterModel(
 ): Promise<{ result: GeminiSectionResponse | null; error?: string; apiResponseTimeMs: number }> {
   const apiStart = performance.now();
   try {
+    const siteUrl =
+      process.env.NEXT_PUBLIC_APP_URL ??
+      (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+
+    const headers: Record<string, string> = {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json',
+      'X-Title': 'Income Tax AI Companion',
+    };
+
+    if (siteUrl) {
+      headers['HTTP-Referer'] = siteUrl;
+    }
+
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-        'HTTP-Referer': 'http://localhost:3000',
-        'X-Title': 'Income Tax AI Companion',
-      },
+      headers,
       body: JSON.stringify({
         model: modelName,
         messages: [
