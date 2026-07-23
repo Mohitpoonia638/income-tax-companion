@@ -43,6 +43,12 @@ async function callOpenRouterModel(
       headers['HTTP-Referer'] = siteUrl;
     }
 
+    console.log('[DEBUG_HEADERS]', {
+      headerNames: Object.keys(headers),
+      hasAuthorization: !!headers['Authorization'],
+      startsWithBearer: headers['Authorization']?.startsWith('Bearer ') ?? false,
+    });
+
     const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers,
@@ -197,11 +203,18 @@ export async function POST(request: Request) {
     });
   }
 
+  const headerDebug = {
+    headerNames: ['Authorization', 'Content-Type', 'X-Title', 'HTTP-Referer'],
+    hasAuthorization: !!apiKey,
+    startsWithBearer: true,
+  };
+
   return NextResponse.json(
     {
       success: false,
       isConfigured: true,
       isRateLimited: error?.includes('429') || false,
+      headerDebug,
       error: error || 'OpenRouter AI query failed.',
       message: 'An error occurred while invoking OpenRouter AI.',
       modelUsed,
