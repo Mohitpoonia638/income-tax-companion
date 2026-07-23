@@ -95,6 +95,14 @@ async function callOpenRouterModel(
 
 export async function POST(request: Request) {
   const reqStart = performance.now();
+
+  console.log('[DEBUG_ENV]', {
+    hasApiKey: !!process.env.OPENROUTER_API_KEY,
+    keyLength: process.env.OPENROUTER_API_KEY?.length ?? 0,
+    vercelEnv: process.env.VERCEL_ENV,
+    vercelUrl: process.env.VERCEL_URL,
+  });
+
   const apiKey = process.env.OPENROUTER_API_KEY;
 
   if (!apiKey || apiKey.trim() === '') {
@@ -102,6 +110,12 @@ export async function POST(request: Request) {
       {
         success: false,
         isConfigured: false,
+        debug: {
+          hasApiKey: !!process.env.OPENROUTER_API_KEY,
+          keyLength: process.env.OPENROUTER_API_KEY?.length ?? 0,
+          vercelEnv: process.env.VERCEL_ENV,
+          vercelUrl: process.env.VERCEL_URL,
+        },
         error: 'OPENROUTER_API_KEY is not configured in .env.local',
         message: 'Add OPENROUTER_API_KEY to .env.local to enable AI analysis.',
       },
